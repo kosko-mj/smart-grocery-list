@@ -8,18 +8,35 @@
 </head>
 <body>
     <div class="container">
-        <h1>Omobono</h1>
-        <div class="subtitle">Smart shopping lists</div>
-        
-        <div class="create-section">
-            <h3>Create new list</h3>
-            <input type="text" id="newListName" placeholder="List name...">
-            <button id="createListBtn">Create List</button>
-        </div>
-        
-        <div class="my-lists-section">
+        <!-- MAIN VIEW (lists) -->
+        <div id="mainView">
+            <h1>Omobono</h1>
+            <div class="subtitle">Smart shopping lists</div>
+            
+            <div class="create-section">
+                <h3>Create new list</h3>
+                <input type="text" id="newListName" placeholder="List name...">
+                <button id="createListBtn">Create List</button>
+            </div>
+            
             <h3>My Lists</h3>
             <div id="listsContainer"></div>
+        </div>
+        
+        <!-- LIST VIEW (items inside a list) - hidden by default -->
+        <div id="listView" style="display: none;">
+            <button id="backBtn">← Back to All Lists</button>
+            <h1 id="listTitle"></h1>
+            
+            <div class="create-section">
+                <h3>Add item</h3>
+                <input type="text" id="newItemName" placeholder="Item name...">
+                <input type="number" id="newItemQuantity" placeholder="Quantity" value="1" style="width: 80px;">
+                <button id="addItemBtn">Add Item</button>
+            </div>
+            
+            <h3>Items</h3>
+            <div id="itemsContainer"></div>
         </div>
     </div>
     
