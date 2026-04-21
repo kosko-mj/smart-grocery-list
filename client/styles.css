@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.create-section {
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input {
+    padding: 10px;
+    width: 85%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.list-card {
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.list-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list-actions button {
+    margin-left: 10px;
+    background-color: #95a5a6;
+}
+
+.list-actions button:first-child {
+    background-color: #27ae60;
+}
+
+.list-actions button:first-child:hover {
+    background-color: #219a52;
+}
+
+.list-actions button:last-child:hover {
+    background-color: #7f8c8d;
+}
+
+.my-lists-section {
+    padding: 0 10px;
+}
